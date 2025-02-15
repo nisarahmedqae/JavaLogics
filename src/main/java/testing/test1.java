@@ -4,7 +4,6 @@ public class test1 {
 
     public static void main(String[] args) {
 
-        System.out.println("demo");
-        System.out.printf("nisar");
+        System.out.println("test1");
     }
 }

@@ -1,11 +1,14 @@
-package testing;
+package nahmed.year2025;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-public class test1 {
+public class KeyBasedArrayRotator {
 
     public static void main(String[] args) {
-        //Input = {1,2,3,4,5,6,7,8}, key =4,  Output = {5,6,7,8,1,2,3,4}
+        //Input = {1,2,3,4,5,6,7,8}, key = 4,  Output = {5,6,7,8,1,2,3,4}
 
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8};
         int key = 4;

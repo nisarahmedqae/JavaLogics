@@ -1,8 +1,9 @@
-package testing;
+package nahmed.year2025;
 
-import java.util.*;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
-public class test1 {
+public class AlphanumericPairExpander {
 
     public static void main(String[] args) {
         String str = "a1b2c3d0f1e1";
@@ -15,8 +16,8 @@ public class test1 {
             i++;
             map.put(key, value);
         }
-
         System.out.println(map);
+
         String blank = "";
         for (Map.Entry<Character, Integer> entry : map.entrySet()) {
             int count = entry.getValue();
@@ -27,3 +28,4 @@ public class test1 {
         System.out.println(blank);
     }
 }
+

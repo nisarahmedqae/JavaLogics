@@ -1,6 +1,6 @@
-package testing;
+package nahmed.year2025;
 
-public class test1 {
+public class LastCharOfTrimmedString {
 
     public static void main(String[] args) {
 
@@ -11,4 +11,5 @@ public class test1 {
         System.out.println(arr[lastIndex]);
 
     }
+
 }

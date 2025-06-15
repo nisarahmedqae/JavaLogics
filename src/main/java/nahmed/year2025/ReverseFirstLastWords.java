@@ -1,6 +1,6 @@
-package testing;
+package nahmed.year2025;
 
-public class test1 {
+public class ReverseFirstLastWords {
 
     public static void main(String[] args) {
 
@@ -27,4 +27,5 @@ public class test1 {
         System.out.println(sb);
 
     }
+
 }

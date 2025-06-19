@@ -6,29 +6,27 @@ public class MutableString {
     // These both classes are same except synchronization
     // StringBuffer is thread safe and synchronized
 
+    // StringBuilder is not thread safe and non-synchronized
+    // StringBuilder is faster
+
     public static void main(String[] args) {
 
         StringBuffer sb = new StringBuffer("Hello");
         sb.append("World");
+        System.out.println(sb); // HelloWorld
+
+        sb.insert(5, "New");
+        System.out.println(sb); // HelloNewWorld
+
+        sb.replace(5, 8, "Amazing");
+        System.out.println(sb); // HelloAmazingWorld
+
+        sb.deleteCharAt(sb.length() - 1);
         System.out.println(sb);
 
-        sb.insert(5, "New"); // HelloNewWorld
-        System.out.println(sb);
+        sb.reverse();
+        System.out.println(sb); // reverse the string
 
-        sb.deleteCharAt(12);
-        System.out.println(sb);
-
-        sb.replace(5, 7, "Amazing"); // heSheaalloworld
-        System.out.println(sb);
-
-        sb.reverse(); // reverse the string
-        System.out.println(sb);
-
-        // StringBuilder is not thread safe and non-synchronized
-        // StringBuilder is faster
-        StringBuilder sbb = new StringBuilder("hello");
-        sbb.append("world");
-        System.out.println(sbb);
     }
 
 }

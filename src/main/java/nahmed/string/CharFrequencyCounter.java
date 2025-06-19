@@ -11,17 +11,13 @@ public class CharFrequencyCounter {
 		HashMap<Character, Integer> hashmap = new HashMap<>();
 		
 		for (char ele : charArr) {
-			if (hashmap.get(ele) == null) {
-				hashmap.put(ele, 1);
-			} else {
-				hashmap.put(ele, hashmap.get(ele) + 1);
-			}
+			hashmap.merge(ele, 1, Integer::sum);
 		}
 		System.out.println(hashmap);
 
 		String result = "";
-		for (char ele : hashmap.keySet()) {
-			result = result + ele + hashmap.get(ele);
+		for (var entry : hashmap.entrySet()) {
+			result = result + entry.getKey() + entry.getValue();
 		}
 		System.out.println(result);
 

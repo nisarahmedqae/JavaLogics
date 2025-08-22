@@ -2,22 +2,23 @@ package sdet;
 
 public class PalindromeNumber {
 
-	public static void main(String[] args) {
-		int num = 16461;
-		int oriNum = num;
-		int rev = 0;
+    public static void main(String[] args) {
+        int num = 16461;
+        int revNum = 0;
 
-		while (num > 0) {
-			rev = rev * 10 + num % 10;
-			num = num / 10;
-		}
-		System.out.println(rev);
+        char[] arr = String.valueOf(num).toCharArray();
 
-		if (oriNum == rev) {
-			System.out.println(oriNum + " Palindrome number");
-		} else {
-			System.out.println(oriNum + " not a Palindrome number");
-		}
-	}
+        for (int i = arr.length - 1; i >= 0; i--) {
+            int digit = arr[i] - '0';
+            revNum = revNum * 10 + digit;
+        }
+        System.out.println(revNum);
 
+        if (num == revNum) {
+            System.out.println(num + " Palindrome number");
+        } else {
+            System.out.println(num + " not a Palindrome number");
+        }
+
+    }
 }

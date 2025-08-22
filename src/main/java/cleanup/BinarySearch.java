@@ -1,4 +1,4 @@
-package sdet;
+package cleanup;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package sdet;
+package cleanup;
 
 public class CountCharOccurence {
 

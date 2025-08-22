@@ -1,4 +1,4 @@
-package sdet;
+package cleanup;
 
 import org.apache.commons.lang3.RandomStringUtils;
 

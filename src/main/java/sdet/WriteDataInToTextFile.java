@@ -9,7 +9,7 @@ public class WriteDataInToTextFile {
 	public static void main(String[] args) throws IOException {
 
 		String systemPath = System.getProperty("user.dir"); // Get the current working directory
-		FileWriter fileWriter = new FileWriter(systemPath + "\\src\\SDET\\WriteFile.txt");
+		FileWriter fileWriter = new FileWriter(systemPath + "\\src\\main\\java\\sdet\\WriteFile.txt");
 		
 		BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 		bufferedWriter.write("Selenium with Java\n");

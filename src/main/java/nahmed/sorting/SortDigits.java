@@ -1,9 +1,9 @@
-package nahmed.integer;
+package nahmed.sorting;
 
 public class SortDigits {
 
 	public static void main(String[] args) {
-		long num = -3216549870L;
+		long num = -32165498700L;
 		long positiveNum = -num; // Convert to positive
 		char[] charArr = String.valueOf(positiveNum).toCharArray();
 

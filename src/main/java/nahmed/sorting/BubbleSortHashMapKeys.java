@@ -1,4 +1,4 @@
-package nahmed.string;
+package nahmed.sorting;
 
 import java.util.*;
 

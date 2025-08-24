@@ -1,6 +1,6 @@
-package naveenautomationlabs.integer;
+package nahmed.conversion;
 
-public class StringToInteger {
+public class StringToIntWoMethod {
 	// WAP: write a program
 	// wap to convert string to integer without using Integer.parseInt() method
 

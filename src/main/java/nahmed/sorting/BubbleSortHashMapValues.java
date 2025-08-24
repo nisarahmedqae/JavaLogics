@@ -1,4 +1,4 @@
-package nahmed.integer;
+package nahmed.sorting;
 
 import java.util.*;
 

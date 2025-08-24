@@ -1,4 +1,4 @@
-package nahmed.string;
+package nahmed.sorting;
 
 public class SortString {
 

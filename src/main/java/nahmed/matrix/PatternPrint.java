@@ -1,4 +1,4 @@
-package nahmed.integer;
+package nahmed.matrix;
 
 import java.util.Arrays;
 
@@ -19,8 +19,8 @@ public class PatternPrint {
 				}
 			}
 		}
-		for (int[] r : pattern) {
-			System.out.println(Arrays.toString(r));
+		for (int[] arr : pattern) {
+			System.out.println(Arrays.toString(arr));
 		}
 	}
 }

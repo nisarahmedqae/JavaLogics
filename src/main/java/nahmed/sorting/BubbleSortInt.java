@@ -1,19 +1,21 @@
-package nahmed.string;
+package nahmed.sorting;
 
 import java.util.Arrays;
 
-public class BubbleSortString {
-	
+public class BubbleSortInt {
+
 	public static void main(String[] args) {
-		
-		String[] arr = { "banana", "apple", "grape", "orange", "pineapple" };
+		// sort the array in ascending and descending order
+		// This is also called bubble sort
+
+		int arr[] = { 2, 6, 1, 4, 9 };
 
 		System.out.println("Arrays before sorting: " + Arrays.toString(arr));
 
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = i + 1; j < arr.length; j++) {
-				if (arr[i].compareTo(arr[j]) > 0) {
-					String temp = arr[i];
+				if (arr[i] > arr[j]) {
+					int temp = arr[i];
 					arr[i] = arr[j];
 					arr[j] = temp;
 				}
@@ -21,5 +23,7 @@ public class BubbleSortString {
 		}
 
 		System.out.println("Arrays after sorting: " + Arrays.toString(arr));
+
 	}
+
 }

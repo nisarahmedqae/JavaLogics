@@ -1,4 +1,4 @@
-package nahmed.year2025;
+package cleanup;
 
 import java.util.Arrays;
 

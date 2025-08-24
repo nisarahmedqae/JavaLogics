@@ -1,8 +1,8 @@
-package nahmed.integer;
+package nahmed.sorting;
 
 import java.util.Arrays;
 
-public class DigitsSort {
+public class SortDigitsWithMethod {
 
 	public static void main(String[] args) {
 		int num = 15628469;

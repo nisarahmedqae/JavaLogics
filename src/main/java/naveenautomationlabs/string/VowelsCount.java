@@ -8,7 +8,7 @@ public class VowelsCount {
 		// total number of vowels in a java string
 
 		// Input string
-		String str = "Nisar Ahmed";
+		String str = "  Nis  ar Ahmed ";
 
 		// Convert the input string to lowercase to make the counting case-insensitive
 		str = str.toLowerCase();

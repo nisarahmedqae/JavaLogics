@@ -1,6 +1,6 @@
-package nahmed;
+package regex;
 
-public class test1 {
+public class AlphaNumStringCounterWithMatches {
 
     public static void main(String[] args) {
         String[] arr = {"1", "first", "second", "FIRST", "SECOND", "THIRD", "MiX", "23first", "56second", "M22ix", "FIRST12", "SECOND34", "THIRD56"};

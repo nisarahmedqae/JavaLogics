@@ -1,11 +1,12 @@
-package nahmed;
+package sorting;
 
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class test1 {
+public class SortMapValuesWithStream {
 
     public static void main(String[] args) {
         // Creating a HashMap with key-value pairs
@@ -18,15 +19,13 @@ public class test1 {
 
         System.out.println("HashMap before sorting: " + hashMap);
 
-        // Sort by keys in Ascending Order
-        LinkedHashMap<String, Integer> sortedByKeysAsc = hashMap.entrySet().stream()
-                .sorted(Map.Entry.comparingByKey())
+        // Sort by values in Descending Order
+        LinkedHashMap<String, Integer> sortedByValuesDesc = hashMap.entrySet().stream()
+                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder())) // Descending order by values
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (oldValue, newValue) -> oldValue,
                         LinkedHashMap::new));
 
-        System.out.println("Sorted by Keys (Ascending): " + sortedByKeysAsc);
+        System.out.println("Sorted by Values (Descending): " + sortedByValuesDesc);
 
-        sortedByKeysAsc.remove("banana");
-        System.out.println("Sorted by Keys (Ascending): " + sortedByKeysAsc);
     }
 }

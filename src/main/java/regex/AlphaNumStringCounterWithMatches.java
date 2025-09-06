@@ -14,11 +14,11 @@ public class AlphaNumStringCounterWithMatches {
 
         // .* will check regardless of other things in the string
         for (String ele : arr) {
-            if (ele.matches(".*[a-z].*") && ele.matches(".*[A-Z]+.*") && ele.matches(".*[0-9]+.*")) {
+            if (ele.matches(".*[a-z]+.*") && ele.matches(".*[A-Z]+.*") && ele.matches(".*[0-9]+.*")) {
                 mixAlphaNumericCount++;
             } else if (ele.matches(".*[a-z]+.*") && ele.matches(".*[0-9]+.*")) {
                 smallAlphaNumericCount++;
-            } else if (ele.matches(".*[A-Z].*") && ele.matches(".*[0-9]+.*")) {
+            } else if (ele.matches(".*[A-Z]+.*") && ele.matches(".*[0-9]+.*")) {
                 capitalAlphaNumericCount++;
             } else if (ele.matches("[0-9]+")) {
                 intCount++;

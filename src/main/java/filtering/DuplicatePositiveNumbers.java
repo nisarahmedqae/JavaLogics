@@ -24,8 +24,7 @@ public class DuplicatePositiveNumbers {
         }
 
         for (var entry : map.entrySet()) {
-            int count = entry.getValue();
-            if (entry.getKey() >= 0 && count > 1) {
+            if (entry.getKey() >= 0 && entry.getValue() > 1) {
                 System.out.println(entry.getKey());
             }
         }

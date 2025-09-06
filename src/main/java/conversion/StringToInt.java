@@ -2,13 +2,13 @@ package conversion;
 
 public class StringToInt {
 
-	public static void main(String[] args) {
-		int num = 15628469;
+    public static void main(String[] args) {
+        String numString = "15628469";
 
-		// Convert the number to a string
-		String numString = Integer.toString(num);
+        // Convert the string to a number
+        int num = Integer.parseInt(numString);
 
-		System.out.println("Converted String: " + numString);
+        System.out.println("Converted int: " + num);
 
-	}
+    }
 }

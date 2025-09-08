@@ -9,15 +9,15 @@ public class StringToIntWoMethod {
 		int result = 0;
 
 		for (int i = 0; i < ch.length; i++) {
-			int asc = ch[i] - '0'; // ASCII value of the character '0'/zero i.e 48
-			result = result * 10 + asc;
+			int digit = ch[i] - '0'; // ASCII value of the character '0'/zero i.e 48
+			result = result * 10 + digit;
 		}
 		return result;
 	}
 
 	public static void main(String[] args) {
-		String s = "123";
-		System.out.println(stringToInt(s) + 10);
+		String str = "123";
+		System.out.println(stringToInt(str) + 10);
 
 	}
 

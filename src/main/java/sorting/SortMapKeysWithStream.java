@@ -1,5 +1,6 @@
 package sorting;
 
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -18,13 +19,13 @@ public class SortMapKeysWithStream {
 
         System.out.println("HashMap before sorting: " + hashMap);
 
-        // Sort by keys in Ascending Order
-        LinkedHashMap<String, Integer> sortedByKeysAsc = hashMap.entrySet().stream()
-                .sorted(Map.Entry.comparingByKey())
+        // Sort by keys in Descending Order
+        LinkedHashMap<String, Integer> sortedByKeysDesc = hashMap.entrySet().stream()
+                .sorted(Map.Entry.comparingByKey(Comparator.reverseOrder()))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (oldValue, newValue) -> oldValue,
                         LinkedHashMap::new));
 
-        System.out.println("Sorted by Keys (Ascending): " + sortedByKeysAsc);
+        System.out.println("Sorted by Keys (Descending): " + sortedByKeysDesc);
 
     }
 }
